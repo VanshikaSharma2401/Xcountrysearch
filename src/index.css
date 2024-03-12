@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.countrygrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.countryCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.countryCard img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.countryCard p {
+  margin: 0;
+  font-size: 16px;
+}
+
