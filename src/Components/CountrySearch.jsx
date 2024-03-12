@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styles from "../../src/styles.module.css";
+// import styles from "../../src/styles.module.css";
 import Countrycard from './Countrycard';
 function CountrySearch() {
   const [countries, setCountries] = useState([]);
@@ -34,7 +34,7 @@ function CountrySearch() {
         value={searchTerm}
         onChange={handleSearch}
       />
-      <div className={styles.countrygrid}>
+      <div className="countrygrid">
         {filteredCountries.map(country => (
           <Countrycard country={country} key={country.name.common}/>
         ))}
